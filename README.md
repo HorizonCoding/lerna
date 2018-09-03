@@ -163,7 +163,7 @@ Running `lerna` without arguments will show all commands/options.
 
 The packages config in lerna.json is a list of globs that match directories containing a package.json, which is how lerna recognizes "leaf" packages (vs the "root" package.json, which is intended to manage the dev dependencies and scripts for the entire repo).
 
-By default, lerna initializes the packages list as `["packages/*"]`, but you can also use another directory such as `["modules/*"]`, or `["package1", "package2"]`. The globs defined are relative to the directory that lerna.json lives in, which is usually the repository root. The only restriction is that you can't directly nest package locations, but this is a restriction shared by "normal" npm packages as well.
+By default, lerna initializes the packages list as `["packages/*"]`, but you can also use another directory such as `["modules/*"]`, or `["package1", "package2"]`. The globs defined are relative to the directory that lerna.json lives in, which is usually the repository root. The only restriction is that you can't directly nest package locations, but this is a restriction shared by the standard npm packages as well.
 
 For example, `["packages/*", "src/**"]` matches this tree:
 
